@@ -121,7 +121,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 56px auto 0px auto;
+    margin: 56px auto -100px auto;
 }
 
 header ul {
@@ -231,14 +231,22 @@ header ul {
 .box h2 {
     line-height: 132%;
     z-index: -1;
+    transition-property: color, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 .box {
     position: relative;
 }
 
+.box:hover h2 {
+    color: var(--grey);
+    transform: scale(1.05);
+}
+
 .box:hover img {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .box img {
@@ -246,6 +254,9 @@ header ul {
     top: 0;
     left: 0;
     opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 /* Call to action section*/
@@ -359,6 +370,9 @@ header ul {
 .featured-image-section {
     opacity: 0;
     background-color: var(--black-color);
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 .featured-image {
@@ -397,8 +411,9 @@ header ul {
     padding: 80px;
 }
 
-.col4-stuff, .project-title {
+.col4-stuff, .dope-stuf {
     text-align: center;
+    color: #27272A;
 }
 
 /* achievement Section */
@@ -428,10 +443,6 @@ header ul {
     font-family: var(--archivo);
     font-weight: 600;
     line-height: 1;
-}
- 
-.counter-title {
-    font-weight: 300;
 }
 
 .counter-title {
@@ -527,7 +538,7 @@ footer {
     align-items: end;
 }
 
-.copyrightsBody, p {
+.copyrightsBody p {
     font-size: var(--text-large);
     font-weight: 300;
     text-transform: uppercase;
