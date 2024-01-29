@@ -132,11 +132,11 @@ header ul {
     transform: scale(1.05);
 }
 
-.box:hover img {
+.box:hover svg {
     opacity: 0.5;
 }
 
-.box img {
+.box svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -177,6 +177,13 @@ header ul {
     animation-name: changecolor;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    position: relative;
+}
+
+#style-1:hover, 
+#style-2:hover, 
+#style-3:hover {
+    animation: none;
 }
 
 #style-2 {
@@ -184,6 +191,7 @@ header ul {
     animation-name: changecolor;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    position: relative;
 }
 
 #style-3 {
@@ -191,6 +199,19 @@ header ul {
     animation-name: changecolor;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    position: relative;
+}
+
+.style img {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+}
+
+.style:hover img {
+    opacity: 1;
 }
 
 @keyframes changecolor {
