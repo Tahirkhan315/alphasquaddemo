@@ -1,0 +1,115 @@
+/* BasementGrotesque Font */
+@font-face {
+    font-family: BasementGrotesque;
+    src: url(../fonts/BasementGrotesque-Black.ttf);
+}
+
+/* Variables declared here */
+:root {
+    /* Colors */
+    --black-color: #000;
+    --white: #FFFFFF;
+    --light-grey: #A1A1AA;
+    --grey: #52525B;
+    --dark-grey: #27272A;
+    --slate-100: #F4F4F5;
+    --section-border: #3F3F46;
+
+    /* fonts sizes */
+    --xl: 4.5rem;
+    --h1: 3.75rem;
+    --h2: 3.5rem;
+    --h3: 3rem;
+    --h4: 2.25rem;
+    --h5: 2rem;
+    --h6: 1.5rem;
+    --text: 1rem;
+    --text18: 1.125rem;
+    --text20: 1.25rem;
+    --text-large: 1.5rem;
+    --text-small: 0.875rem;
+
+    /* font-family */
+    --anotonio: 'Antonio', sans-serif;
+    --archivo: 'Archivo', sans-serif;
+    --BasementGrotesque: BasementGrotesque;
+    --red-hat-display: 'Red Hat Display', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--black-color);
+    color: var(--white);
+}
+
+h1, h2, h4, h5, h6 .h1, .h2, .h4, .h5, .h6, .xl{
+    font-family: var(--BasementGrotesque);
+    line-height: 120%;
+    font-weight: 900;
+}
+
+.xl {
+    font-size: var(--xl);
+    letter-spacing: -3px;
+}
+
+h1, .h1 {
+    font-size: var(--h1);
+    line-height: 140%;
+    letter-spacing: -3%;
+}
+
+h2, .h2 {
+    font-size: var(--h2);
+    letter-spacing: 1px;
+}
+
+h3, .h3 {
+    font-size: var(--h3);
+}
+
+h4, .h4 {
+    font-size: var(--h4);
+    font-family: var(--anotonio);
+    font-weight: 700;
+}
+
+h5, .h5 {
+    font-size: var(--h5);
+}
+
+h6, .h6 {
+    font-size: var(--h6);
+}
+
+p {
+    font-family: var(--archivo);
+    color: var(--light-grey);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--archivo);
+    font-size: var(--text-small);
+    font-weight: 400;
+    text-transform: uppercase;
+}
