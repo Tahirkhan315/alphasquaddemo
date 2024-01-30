@@ -36,8 +36,8 @@ header ul {
     left: 0;
     right: 0;
     top: -75%;
-    /* bottom: 0; */
     margin: auto;
+    z-index: -1;
 }
 
 .subtitle {
@@ -57,20 +57,19 @@ header ul {
     letter-spacing: -3%;
 }
 
-.carousel {
-    margin-top: 145px;
-    padding-bottom: 90px;
+.home-slider {
+    margin-top: 96px;
+    margin-bottom: 96px;
+    width: 1013px;
+    margin: auto;
 }
 
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-    align-items: center;
-    justify-content: center;
+.slide{
+    margin-top: 145px;
 }
 
 .feedback {
+    text-align: center;
     font-size: 30px;
     letter-spacing: -1px;
 }
@@ -79,12 +78,22 @@ header ul {
     width: 511px;
     background-color: var(--grey);
     height: 1px;
+    margin: 32px auto;
+
 }
 
 .client-details {
+    text-align: center;
     font-size: 1rem;
     letter-spacing: -1%;
+    margin-bottom: 32px;
 }
+
+.slide img {
+    margin: auto;
+}
+
+
 
 /* logos Section */
 .logos-section {
@@ -136,16 +145,21 @@ header ul {
     opacity: 0.5;
 }
 
-.box svg {
+svg {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
+   animation: zigzag-animate 2s forwards;
 }
-
+/* @keyframes zigzag-animate {
+0%{
+    mask-position: 0 0;
+}
+100%{
+    mask-position: 100% 0;
+}
+} */
 /* Call to action section*/
 .call-to-action {
     max-width: 1536px;
