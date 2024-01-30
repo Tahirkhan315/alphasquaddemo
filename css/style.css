@@ -136,22 +136,6 @@ header ul {
     position: relative;
 }
 
-/* .box:hover h2 {
-    color: var(--grey);
-    transform: scale(1.05);
-}
-
-.box:hover svg {
-    opacity: 0;
-} */
-
-/* svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-} */
-
 .arrow {
     width: 0px;
     overflow: hidden;
