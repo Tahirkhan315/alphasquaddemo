@@ -136,31 +136,37 @@ header ul {
     position: relative;
 }
 
-.box:hover h2 {
+/* .box:hover h2 {
     color: var(--grey);
     transform: scale(1.05);
 }
 
 .box:hover svg {
-    opacity: 0.5;
-}
+    opacity: 0;
+} */
 
-svg {
+/* svg {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
-   animation: zigzag-animate 2s forwards;
-}
-/* @keyframes zigzag-animate {
-0%{
-    mask-position: 0 0;
-}
-100%{
-    mask-position: 100% 0;
-}
+    opacity: 0.5;
 } */
-/* Call to action section*/
+
+.arrow {
+    width: 0px;
+    overflow: hidden;
+    pointer-events: none;
+    transition: width 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+#micromanagement:hover + .arrow{
+    width: 100%;
+}
+
 .call-to-action {
     max-width: 1536px;
     margin: 0 auto;
