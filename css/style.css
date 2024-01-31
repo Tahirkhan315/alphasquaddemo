@@ -4,7 +4,7 @@
 .hero-section {
     max-width: 1013px;
     margin: 0 auto;
-    padding: 140px 0px 112px 0px;
+    padding: 240px 0px 112px 0px;
     text-align: center;
     position: relative;
     overflow-y: hidden;
@@ -14,7 +14,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: -75%;
+    top: -50%;
     margin: auto;
     z-index: -1;
 }
