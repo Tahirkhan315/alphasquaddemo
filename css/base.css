@@ -134,9 +134,3 @@ header ul {
     justify-content: center;
     align-items: center;
 }
-
-@media (max-width:1110px) {
-    .logos-section {
-        padding: 0px 80px;
-    }
-}
