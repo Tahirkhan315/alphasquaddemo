@@ -147,7 +147,7 @@ header ul {
     opacity: 0.5;
 }
 
-#micromanagement:hover + .arrow{
+.box:hover + .arrow{
     width: 100%;
 }
 
