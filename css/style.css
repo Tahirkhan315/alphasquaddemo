@@ -1,26 +1,5 @@
 @import './base.css';
 
-
-/* Header */
-header {
-    max-width: 1760px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 56px auto -100px auto;
-}
-
-header ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Hero Section */
 .hero-section {
     max-width: 1013px;
